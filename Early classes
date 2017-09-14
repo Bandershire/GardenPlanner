@@ -1,0 +1,38 @@
+# import csv
+
+#
+# garden_dimensionsx = int(input('How long is your garden in feet?')) * 12
+# garden_dimensionsy = int(input('How wide is your garden in feet?')) * 12
+#
+# print(garden_dimensionsx, 'x', garden_dimensionsy, 'y')
+
+class Beds:
+    def __init__(self):
+        pass
+
+
+class Vegetable:
+    """Need to look up how to create class attributes dynamically."""
+    # def __init__(self, comp_plant, season, tom,
+    #              space, bolt, annual,
+    #              transplant, edible, thinning,
+    #              thinto, harvestby, support):
+    #
+    #     Vegetable.self = self
+    #     Vegetable.comp_plant = comp_plant
+    #     Vegetable.season = season
+    #     Vegetable.tom = tom
+    #     Vegetable.space = space
+    #     Vegetable.bolt = bolt
+    #     Vegetable.annual = annual
+    #     Vegetable.transplant = transplant
+    #     Vegetable.edible = edible
+    #     Vegetable.thinning = thinning
+    #     Vegetable.thinto = thinto
+    #     Vegetable.harvestby = harvestby
+    #     Vegetable.support = support
+    pass
+
+
+class PopularVegetable(Vegetable):
+    pass
