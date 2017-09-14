@@ -1,0 +1,22 @@
+import plant csv
+
+Prompt user to enter garden dimensions in inche
+Prompt user to enter bed width in inches
+Prompt user to enter walkway size in inches
+
+Display calculated number of beds and walkways that will fit given garden dimensions
+
+Repeat for each bed and walkway until all are assigned:
+  Display selection of popular plants
+  Prompt user to select a popular plant
+  Prompt user to select a companion plant
+  Assign to a bed
+  
+  Display selection of ground cover plants
+  Prompt user to select a ground cover plant 
+  Assign to a walkway
+
+Display:
+  Number of beds, number of walkways
+  Per bd and walkway display:
+    Plants, spacing, amount of seed required, expected yield under best conditions, time to maturity, bolting tendency
