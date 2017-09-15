@@ -1,0 +1,52 @@
+import csv
+
+
+with open(r'veggie_details.csv', 'r') as csv_file:
+    csv_reader = csv.reader(csv_file)
+    big_list = list(csv_reader)
+
+    head_list = big_list[0]
+    rows = big_list[1:]
+    row1 = big_list[1]
+    row2 = big_list[2]
+    row3 = big_list[3]
+
+def matching_stuff(header, row):
+    counter = 0
+    match_row = {}
+    for i in row:
+        key = header[counter]
+        match_row[key] = i
+        counter += 1
+    return match_row
+
+a = matching_stuff(head_list, row1)
+b = matching_stuff(head_list, row2)
+c = matching_stuff(head_list, row3)
+
+veggies = [a, b, c]
+
+beds = ['Bed1', 'Bed2', 'Bed3', 'Bed4']
+
+bed_veg = {}
+
+def what_veg():
+    for l in beds:
+        for i in veggies:
+            print(i['Name'])
+        choice_veg = input('What veggie do you want in this bed?')
+        bed_veg[l] = choice_veg
+        print(l, bed_veg[l])
+
+
+def veg_dets():
+    for l in bed_veg:
+        for i in veggies:
+            if bed_veg[l] == i['Name']:
+                bed_veg[l] = i
+                print(bed_veg[l], l)
+
+
+what_veg()
+print(bed_veg, 'finished dict')
+veg_dets()
