@@ -1,0 +1,30 @@
+
+
+turnip = {'Name': 'Turnip', 'Spacing': 3}
+chard = {'Name': 'Chard', 'Spacing': 6}
+corn = {'Name': 'Corn', 'Spacing': 12}
+melon = {'Name': 'Melon', 'Spacing': 36}
+
+veggies = [turnip, chard, corn, melon]
+
+
+# veggies = ['Turnip', 'Chard', 'Corn', 'Tomato', 'Green Beans', 'Melon', 'Daikon']
+
+beds = ['Bed1', 'Bed2', 'Bed3', 'Bed4']
+
+bed_veg = {}
+
+for l in beds:
+    for i in veggies:
+        print(i['Name'])
+    choice_veg = input('What veggie do you want in this bed?')
+    bed_veg[l] = choice_veg
+    print(l, bed_veg[l])
+
+print(bed_veg, 'finished dict')
+
+for l in bed_veg:
+    for i in veggies:
+        if bed_veg[l] == i['Name']:
+            bed_veg[l] = i
+            print(bed_veg[l], l)
